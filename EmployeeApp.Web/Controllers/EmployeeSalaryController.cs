@@ -1,5 +1,7 @@
-﻿using EmployeeApp.Core.Entities;
+﻿using EmployeeApp.Application.DTOS;
+using EmployeeApp.Core.Entities;
 using EmployeeApp.Core.Interfaces;
+using EmployeeApp.Infrastructure.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeApp.Web.Controllers
@@ -7,15 +9,17 @@ namespace EmployeeApp.Web.Controllers
     public class EmployeeSalaryController : Controller
     {
         private readonly ISalaryRepository _salaryRepository;
+        private readonly IEmployeeRepository _employeeRepository;
 
-        public EmployeeSalaryController(ISalaryRepository salaryRepository)
+        public EmployeeSalaryController(IEmployeeRepository employeeRepository, ISalaryRepository salaryRepository)
         {
+            _employeeRepository = employeeRepository;
             _salaryRepository = salaryRepository;
         }
         // GET: Add Salary
         public IActionResult AddSalary(int employeeId)
         {
-            var model = new EmployeeSalary
+            var model = new EmployeeSalaryDto
             {
                 EmployeeId = employeeId,
                 SalaryDate = DateTime.Today
@@ -27,17 +31,22 @@ namespace EmployeeApp.Web.Controllers
         // POST: Add Salary
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddSalary(EmployeeSalary model)
+        public async Task<IActionResult> AddSalary(EmployeeSalaryDto model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
+                return View(model);
+            var salary = new EmployeeSalary
             {
-                model.CreatedDate = DateTime.Now;
-                await _salaryRepository.AddAsync(model);
+                EmployeeId = model.EmployeeId,
+                SalaryDate = model.SalaryDate,
+                Amount = model.Amount,
+                CreatedDate = DateTime.Now
+            };
 
-                return RedirectToAction("Index", "Employee");
-            }
+            await _salaryRepository.AddAsync(salary);
 
-            return View(model);
+            return RedirectToAction("Index", "Employee");
+            
         }
     }
 }
