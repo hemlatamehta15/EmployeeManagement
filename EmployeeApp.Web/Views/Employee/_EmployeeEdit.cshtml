@@ -1,0 +1,44 @@
+﻿@using EmployeeApp.Core.Entities
+@model Employee
+
+<form id="editEmployeeForm">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-2">
+        <label>First Name</label>
+        <input asp-for="FirstName" class="form-control" />
+    </div>
+
+    <div class="mb-2">
+        <label>Last Name</label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+
+    <div class="mb-2">
+        <label>City</label>
+        <input asp-for="City" class="form-control" />
+    </div>
+
+    <div class="mb-2">
+        <label>Zip</label>
+        <input asp-for="Zip" class="form-control" />
+    </div>
+
+    <button type="button" class="btn btn-success" onclick="saveEmployee()">
+        Save
+    </button>
+</form>
+
+<script>
+    function saveEmployee() {
+        $.ajax({
+            url: "/Employee/Edit",
+            type: "POST",
+            data: $("#editEmployeeForm").serialize(),
+            success: function () {
+                $("#employeeModal").modal("hide");
+                location.reload();
+            }
+        });
+    }
+</script>

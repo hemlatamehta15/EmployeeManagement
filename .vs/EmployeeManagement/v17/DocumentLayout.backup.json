@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\EmployeeManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|e:\\employeemanagement\\employeeapp.web\\controllers\\employeesalarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|solutionrelative:employeeapp.web\\controllers\\employeesalarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|e:\\employeemanagement\\employeeapp.web\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|solutionrelative:employeeapp.web\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|e:\\employeemanagement\\employeeapp.web\\views\\employeesalary\\addsalary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|solutionrelative:employeeapp.web\\views\\employeesalary\\addsalary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA85BD43-9708-46E8-B736-95930D4E7BD1}|EmployeeApp.Infrastructure\\EmployeeApp.Infrastructure.csproj|e:\\employeemanagement\\employeeapp.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA85BD43-9708-46E8-B736-95930D4E7BD1}|EmployeeApp.Infrastructure\\EmployeeApp.Infrastructure.csproj|solutionrelative:employeeapp.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|e:\\employeemanagement\\employeeapp.web\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|solutionrelative:employeeapp.web\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A6A1C3B-892C-47C5-85BC-DCA6E9C4BFE2}|EmployeeApp.Core\\EmployeeApp.Core.csproj|e:\\employeemanagement\\employeeapp.core\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A6A1C3B-892C-47C5-85BC-DCA6E9C4BFE2}|EmployeeApp.Core\\EmployeeApp.Core.csproj|solutionrelative:employeeapp.core\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|e:\\employeemanagement\\employeeapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|solutionrelative:employeeapp.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA85BD43-9708-46E8-B736-95930D4E7BD1}|EmployeeApp.Infrastructure\\EmployeeApp.Infrastructure.csproj|e:\\employeemanagement\\employeeapp.infrastructure\\repositories\\salaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA85BD43-9708-46E8-B736-95930D4E7BD1}|EmployeeApp.Infrastructure\\EmployeeApp.Infrastructure.csproj|solutionrelative:employeeapp.infrastructure\\repositories\\salaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A6A1C3B-892C-47C5-85BC-DCA6E9C4BFE2}|EmployeeApp.Core\\EmployeeApp.Core.csproj|e:\\employeemanagement\\employeeapp.core\\interfaces\\isalaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A6A1C3B-892C-47C5-85BC-DCA6E9C4BFE2}|EmployeeApp.Core\\EmployeeApp.Core.csproj|solutionrelative:employeeapp.core\\interfaces\\isalaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|e:\\employeemanagement\\employeeapp.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|solutionrelative:employeeapp.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61093911-7A86-450B-A10D-B431B7F0D78A}|EmployeeApp.Application\\EmployeeApp.Application.csproj|e:\\employeemanagement\\employeeapp.application\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61093911-7A86-450B-A10D-B431B7F0D78A}|EmployeeApp.Application\\EmployeeApp.Application.csproj|solutionrelative:employeeapp.application\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A6A1C3B-892C-47C5-85BC-DCA6E9C4BFE2}|EmployeeApp.Core\\EmployeeApp.Core.csproj|e:\\employeemanagement\\employeeapp.core\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A6A1C3B-892C-47C5-85BC-DCA6E9C4BFE2}|EmployeeApp.Core\\EmployeeApp.Core.csproj|solutionrelative:employeeapp.core\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61093911-7A86-450B-A10D-B431B7F0D78A}|EmployeeApp.Application\\EmployeeApp.Application.csproj|e:\\employeemanagement\\employeeapp.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61093911-7A86-450B-A10D-B431B7F0D78A}|EmployeeApp.Application\\EmployeeApp.Application.csproj|solutionrelative:employeeapp.application\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|e:\\employeemanagement\\employeeapp.web\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|solutionrelative:employeeapp.web\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|e:\\employeemanagement\\employeeapp.web\\views\\employee\\_employeeedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3EB950CB-B33C-4002-8442-7D8A68815EFA}|EmployeeApp.Web\\EmployeeApp.Web.csproj|solutionrelative:employeeapp.web\\views\\employee\\_employeeedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddSalary.cshtml",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Web\\Views\\EmployeeSalary\\AddSalary.cshtml",
+              "RelativeDocumentMoniker": "EmployeeApp.Web\\Views\\EmployeeSalary\\AddSalary.cshtml",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Web\\Views\\EmployeeSalary\\AddSalary.cshtml",
+              "RelativeToolTip": "EmployeeApp.Web\\Views\\EmployeeSalary\\AddSalary.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T06:37:59.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeSalaryController.cs",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Web\\Controllers\\EmployeeSalaryController.cs",
+              "RelativeDocumentMoniker": "EmployeeApp.Web\\Controllers\\EmployeeSalaryController.cs",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Web\\Controllers\\EmployeeSalaryController.cs",
+              "RelativeToolTip": "EmployeeApp.Web\\Controllers\\EmployeeSalaryController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T06:35:50.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SalaryRepository.cs",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Infrastructure\\Repositories\\SalaryRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeApp.Infrastructure\\Repositories\\SalaryRepository.cs",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Infrastructure\\Repositories\\SalaryRepository.cs",
+              "RelativeToolTip": "EmployeeApp.Infrastructure\\Repositories\\SalaryRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T06:26:20.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "EmployeeApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "EmployeeApp.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAowBUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T06:16:47.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ISalaryRepository.cs",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Core\\Interfaces\\ISalaryRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeApp.Core\\Interfaces\\ISalaryRepository.cs",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Core\\Interfaces\\ISalaryRepository.cs",
+              "RelativeToolTip": "EmployeeApp.Core\\Interfaces\\ISalaryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T05:53:34.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Core\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "EmployeeApp.Core\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Core\\Interfaces\\IEmployeeRepository.cs",
+              "RelativeToolTip": "EmployeeApp.Core\\Interfaces\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T05:53:32.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Application\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "EmployeeApp.Application\\Services\\EmployeeService.cs",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Application\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "EmployeeApp.Application\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAwwBkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T05:53:13.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Application\\Mappings\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "EmployeeApp.Application\\Mappings\\MappingProfile.cs",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Application\\Mappings\\MappingProfile.cs",
+              "RelativeToolTip": "EmployeeApp.Application\\Mappings\\MappingProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T05:53:06.895Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Web\\Views\\Employee\\Create.cshtml",
+              "RelativeDocumentMoniker": "EmployeeApp.Web\\Views\\Employee\\Create.cshtml",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Web\\Views\\Employee\\Create.cshtml",
+              "RelativeToolTip": "EmployeeApp.Web\\Views\\Employee\\Create.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T05:47:51.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Web\\Program.cs",
+              "RelativeDocumentMoniker": "EmployeeApp.Web\\Program.cs",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Web\\Program.cs",
+              "RelativeToolTip": "EmployeeApp.Web\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T05:22:54.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Core\\Entities\\Employee.cs",
+              "RelativeDocumentMoniker": "EmployeeApp.Core\\Entities\\Employee.cs",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Core\\Entities\\Employee.cs",
+              "RelativeToolTip": "EmployeeApp.Core\\Entities\\Employee.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T05:17:22.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EmployeeApp.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "EmployeeApp.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T05:15:41.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_EmployeeEdit.cshtml",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Web\\Views\\Employee\\_EmployeeEdit.cshtml",
+              "RelativeDocumentMoniker": "EmployeeApp.Web\\Views\\Employee\\_EmployeeEdit.cshtml",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Web\\Views\\Employee\\_EmployeeEdit.cshtml",
+              "RelativeToolTip": "EmployeeApp.Web\\Views\\Employee\\_EmployeeEdit.cshtml",
+              "ViewState": "AgIAABQAAAAAAAAAAAAzwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T05:13:39.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Web\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "EmployeeApp.Web\\Views\\Employee\\Index.cshtml",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Web\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "EmployeeApp.Web\\Views\\Employee\\Index.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowDQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-28T05:12:02.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "E:\\EmployeeManagement\\EmployeeApp.Web\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "EmployeeApp.Web\\Controllers\\EmployeeController.cs",
+              "ToolTip": "E:\\EmployeeManagement\\EmployeeApp.Web\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "EmployeeApp.Web\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAcwFsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-28T05:11:35.075Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

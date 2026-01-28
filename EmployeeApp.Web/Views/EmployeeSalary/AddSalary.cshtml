@@ -1,0 +1,34 @@
+﻿@using EmployeeApp.Core.Entities
+@model EmployeeSalary
+
+@{
+    ViewData["Title"] = "Add Monthly Salary";
+}
+
+<h3>Add Monthly Salary</h3>
+
+<form asp-action="AddSalary" method="post">
+
+    <input type="hidden" asp-for="EmployeeId" />
+
+    <div class="mb-3">
+        <label asp-for="SalaryDate" class="form-label"></label>
+        <input asp-for="SalaryDate" type="month" class="form-control" />
+        <span asp-validation-for="SalaryDate" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Amount" class="form-label"></label>
+        <input asp-for="Amount" class="form-control" />
+        <span asp-validation-for="Amount" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-controller="Employee" asp-action="Index" class="btn btn-secondary">
+        Back
+    </a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

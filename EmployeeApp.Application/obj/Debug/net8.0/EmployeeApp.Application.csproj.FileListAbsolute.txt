@@ -1,0 +1,17 @@
+E:\EmployeeManagement\EmployeeApp.Application\bin\Debug\net8.0\EmployeeApp.Application.deps.json
+E:\EmployeeManagement\EmployeeApp.Application\bin\Debug\net8.0\EmployeeApp.Application.dll
+E:\EmployeeManagement\EmployeeApp.Application\bin\Debug\net8.0\EmployeeApp.Application.pdb
+E:\EmployeeManagement\EmployeeApp.Application\bin\Debug\net8.0\EmployeeApp.Core.dll
+E:\EmployeeManagement\EmployeeApp.Application\bin\Debug\net8.0\EmployeeApp.Infrastructure.dll
+E:\EmployeeManagement\EmployeeApp.Application\bin\Debug\net8.0\EmployeeApp.Core.pdb
+E:\EmployeeManagement\EmployeeApp.Application\bin\Debug\net8.0\EmployeeApp.Infrastructure.pdb
+E:\EmployeeManagement\EmployeeApp.Application\obj\Debug\net8.0\EmployeeApp.Application.csproj.AssemblyReference.cache
+E:\EmployeeManagement\EmployeeApp.Application\obj\Debug\net8.0\EmployeeApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\EmployeeManagement\EmployeeApp.Application\obj\Debug\net8.0\EmployeeApp.Application.AssemblyInfoInputs.cache
+E:\EmployeeManagement\EmployeeApp.Application\obj\Debug\net8.0\EmployeeApp.Application.AssemblyInfo.cs
+E:\EmployeeManagement\EmployeeApp.Application\obj\Debug\net8.0\EmployeeApp.Application.csproj.CoreCompileInputs.cache
+E:\EmployeeManagement\EmployeeApp.Application\obj\Debug\net8.0\Employee.5A67289D.Up2Date
+E:\EmployeeManagement\EmployeeApp.Application\obj\Debug\net8.0\EmployeeApp.Application.dll
+E:\EmployeeManagement\EmployeeApp.Application\obj\Debug\net8.0\refint\EmployeeApp.Application.dll
+E:\EmployeeManagement\EmployeeApp.Application\obj\Debug\net8.0\EmployeeApp.Application.pdb
+E:\EmployeeManagement\EmployeeApp.Application\obj\Debug\net8.0\ref\EmployeeApp.Application.dll

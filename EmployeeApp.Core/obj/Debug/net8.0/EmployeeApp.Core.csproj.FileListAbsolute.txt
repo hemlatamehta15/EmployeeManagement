@@ -1,0 +1,11 @@
+E:\EmployeeManagement\EmployeeApp.Core\bin\Debug\net8.0\EmployeeApp.Core.deps.json
+E:\EmployeeManagement\EmployeeApp.Core\bin\Debug\net8.0\EmployeeApp.Core.dll
+E:\EmployeeManagement\EmployeeApp.Core\bin\Debug\net8.0\EmployeeApp.Core.pdb
+E:\EmployeeManagement\EmployeeApp.Core\obj\Debug\net8.0\EmployeeApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\EmployeeManagement\EmployeeApp.Core\obj\Debug\net8.0\EmployeeApp.Core.AssemblyInfoInputs.cache
+E:\EmployeeManagement\EmployeeApp.Core\obj\Debug\net8.0\EmployeeApp.Core.AssemblyInfo.cs
+E:\EmployeeManagement\EmployeeApp.Core\obj\Debug\net8.0\EmployeeApp.Core.csproj.CoreCompileInputs.cache
+E:\EmployeeManagement\EmployeeApp.Core\obj\Debug\net8.0\EmployeeApp.Core.dll
+E:\EmployeeManagement\EmployeeApp.Core\obj\Debug\net8.0\refint\EmployeeApp.Core.dll
+E:\EmployeeManagement\EmployeeApp.Core\obj\Debug\net8.0\EmployeeApp.Core.pdb
+E:\EmployeeManagement\EmployeeApp.Core\obj\Debug\net8.0\ref\EmployeeApp.Core.dll

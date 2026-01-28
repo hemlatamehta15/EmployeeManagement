@@ -1,0 +1,109 @@
+﻿@using EmployeeApp.Core.Entities
+@model List<Employee>
+
+@{
+    ViewData["Title"] = "Employee List";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h3>Employees</h3>
+
+    <a asp-action="Create" class="btn btn-primary">
+        + Create New Employee
+    </a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Employee Name</th>
+            <th>City</th>
+            <th>Zip</th>
+            <th>Created Date</th>
+            <th>Add Salary</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if (Model.Any())
+        {
+            foreach (var emp in Model)
+            {
+                <tr>
+                    <td>
+                        <a href="#" onclick="editEmployee(@emp.Id)">
+                            @emp.Id
+                        </a>
+                    </td>
+                    <td>@emp.FirstName @emp.LastName</td>
+                    <td>@emp.City</td>
+                    <td>@emp.Zip</td>
+                    <td>@emp.CreatedDate.ToString("dd-MMM-yyyy")</td>
+                    <td>
+                        <a asp-controller="EmployeeSalary"
+                           asp-action="AddSalary"
+                           asp-route-employeeId="@emp.Id"
+                           class="btn btn-sm btn-warning">
+                            Add Salary
+                        </a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5" class="text-center">
+                    No employees found.
+                </td>
+            </tr>
+        }
+    </tbody>
+    </table>
+@* <table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>City</th>
+    </tr>
+
+    @foreach (var emp in Model)
+    {
+        <tr>
+            <td>
+                <a href="#" onclick="editEmployee(@emp.Id)">
+                    @emp.Id
+                </a>
+            </td>
+            <td>@emp.FirstName @emp.LastName</td>
+            <td>@emp.City</td>
+        </tr>
+    }
+</table> *@
+
+<!-- Modal -->
+<div class="modal fade" id="employeeModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Edit Employee</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body" id="modalBody">
+                <!-- Partial View loads here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function editEmployee(id) {
+            $("#modalBody").load("/Employee/Edit?id=" + id, function () {
+                $("#employeeModal").modal("show");
+            });
+        }
+    </script>
+}
