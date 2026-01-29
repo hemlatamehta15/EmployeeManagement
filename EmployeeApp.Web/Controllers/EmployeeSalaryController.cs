@@ -1,20 +1,18 @@
 ﻿using EmployeeApp.Application.DTOS;
-using EmployeeApp.Core.Entities;
-using EmployeeApp.Core.Interfaces;
-using EmployeeApp.Infrastructure.Repositories;
+using EmployeeApp.Application.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeApp.Web.Controllers
 {
     public class EmployeeSalaryController : Controller
     {
-        private readonly ISalaryRepository _salaryRepository;
-        private readonly IEmployeeRepository _employeeRepository;
+        private readonly EmployeeSalaryService _salaryService;
+        private readonly ILogger<EmployeeSalaryController> _logger;
 
-        public EmployeeSalaryController(IEmployeeRepository employeeRepository, ISalaryRepository salaryRepository)
+        public EmployeeSalaryController(EmployeeSalaryService salaryService, ILogger<EmployeeSalaryController> logger)
         {
-            _employeeRepository = employeeRepository;
-            _salaryRepository = salaryRepository;
+            _salaryService = salaryService;
+            _logger = logger;
         }
         // GET: Add Salary
         public IActionResult AddSalary(int employeeId)
@@ -35,18 +33,33 @@ namespace EmployeeApp.Web.Controllers
         {
             if (!ModelState.IsValid)
                 return View(model);
-            var salary = new EmployeeSalary
-            {
-                EmployeeId = model.EmployeeId,
-                SalaryDate = model.SalaryDate,
-                Amount = model.Amount,
-                CreatedDate = DateTime.Now
-            };
+            int year = model.SalaryDate.Year;
+            int month = model.SalaryDate.Month;
 
-            await _salaryRepository.AddAsync(salary);
+            bool exists = await _salaryService
+                .SalaryExistsAsync(model.EmployeeId, year, month);
+
+            if (exists)
+            {
+                ModelState.AddModelError(
+                    "",
+                    "Salary for this employee and month already exists."
+                );
+                return View(model);
+            }
+
+            await _salaryService.AddAsync(model);
 
             return RedirectToAction("Index", "Employee");
             
+        }
+        // Load salary modal (Partial View)
+        public async Task<IActionResult> CurrentYearSalary(int employeeId)
+        {
+            var salaries = await _salaryService
+                .GetCurrentYearSalaryAsync(employeeId);
+
+            return PartialView("_EmployeeSalaryList", salaries);
         }
     }
 }

@@ -1,0 +1,33 @@
+﻿@using EmployeeApp.Application.DTOS
+@model List<EmployeeSalaryDto>
+
+<h5>Current Year Salary</h5>
+
+<table class="table table-bordered table-sm">
+    <thead>
+        <tr>
+            <th>Month</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.SalaryDate.ToString("MMMM yyyy")</td>
+                    <td>@item.Amount</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="2" class="text-center">
+                    No salary records found for this year.
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

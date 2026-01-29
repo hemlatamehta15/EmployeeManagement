@@ -1,5 +1,6 @@
 ﻿using EmployeeApp.Core.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,10 +21,19 @@ namespace EmployeeApp.Infrastructure.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Employee>()
+                    .Property(e => e.CreatedDate)
+                    .ValueGeneratedOnAdd()
+                    .Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Ignore);
+
             modelBuilder.Entity<EmployeeSalary>()
                 .HasOne(e => e.Employee)
                 .WithMany()
                 .HasForeignKey(e => e.EmployeeId);
+
+            modelBuilder.Entity<EmployeeSalary>()
+              .HasIndex(e => new { e.EmployeeId, e.SalaryDate })
+              .IsUnique();
         }
     }
 

@@ -9,7 +9,8 @@ namespace EmployeeApp.Core.Interfaces
 {
     public interface ISalaryRepository
     {
-   //     Task<List<EmployeeSalary>> GetCurrentYearSalary(int employeeId);
+        Task<List<EmployeeSalary>> GetCurrentYearSalaryAsync(int employeeId);
+        Task<bool> SalaryExistsAsync(int employeeId, int year, int month); 
         Task AddAsync(EmployeeSalary salary);
     }
 }

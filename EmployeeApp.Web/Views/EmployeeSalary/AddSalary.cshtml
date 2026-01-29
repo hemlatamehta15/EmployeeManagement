@@ -6,6 +6,15 @@
 }
 
 <h3>Add Monthly Salary</h3>
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+        {
+            <div>@error.ErrorMessage</div>
+        }
+    </div>
+}
 
 <form asp-action="AddSalary" method="post">
 
@@ -13,7 +22,7 @@
 
     <div class="mb-3">
         <label asp-for="SalaryDate" class="form-label"></label>
-        <input asp-for="SalaryDate" type="month" class="form-control" />
+        <input asp-for="SalaryDate" type="date" class="form-control" />
         <span asp-validation-for="SalaryDate" class="text-danger"></span>
     </div>
 

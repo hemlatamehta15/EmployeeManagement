@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using EmployeeApp.Application.DTOS;
+using EmployeeApp.Core.Entities;
 using EmployeeApp.Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,6 +26,23 @@ namespace EmployeeApp.Application.Services
         {
             var data = await _repo.GetAllAsync();
             return _mapper.Map<List<EmployeeDto>>(data);
+        }
+        public async Task<EmployeeDto> GetByIdAsync(int id)
+        {
+            var data = await _repo.GetByIdAsync(id);
+            return _mapper.Map<EmployeeDto>(data);
+        }
+
+        public async Task AddAsync(EmployeeDto employeeDto)
+        {
+            Employee employee = _mapper.Map<Employee>(employeeDto);
+            await _repo.AddAsync(employee);
+        }
+
+        public async Task UpdateAsync(EmployeeDto employeeDto)
+        {
+            Employee employee = _mapper.Map<Employee>(employeeDto);
+            await _repo.UpdateAsync(employee);
         }
     }
 }

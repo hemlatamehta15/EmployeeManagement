@@ -36,6 +36,7 @@ namespace EmployeeApp.Infrastructure.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<DateTime>("CreatedDate")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("FirstName")
@@ -80,7 +81,8 @@ namespace EmployeeApp.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("EmployeeId");
+                    b.HasIndex("EmployeeId", "SalaryDate")
+                        .IsUnique();
 
                     b.ToTable("EmployeeSalaries");
                 });

@@ -1,5 +1,5 @@
-﻿@using EmployeeApp.Core.Entities
-@model List<Employee>
+﻿@using EmployeeApp.Application.DTOS
+@model List<EmployeeDto>
 
 @{
     ViewData["Title"] = "Employee List";
@@ -22,6 +22,7 @@
             <th>Zip</th>
             <th>Created Date</th>
             <th>Add Salary</th>
+            <th>Show Salary</th>
         </tr>
     </thead>
 
@@ -48,6 +49,12 @@
                             Add Salary
                         </a>
                     </td>
+                    <td>
+                        <button class="btn btn-sm btn-info"
+                                onclick="showSalary(@emp.Id)">
+                            Salary
+                        </button>
+                    </td>
                 </tr>
             }
         }
@@ -60,27 +67,7 @@
             </tr>
         }
     </tbody>
-    </table>
-@* <table class="table table-bordered">
-    <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>City</th>
-    </tr>
-
-    @foreach (var emp in Model)
-    {
-        <tr>
-            <td>
-                <a href="#" onclick="editEmployee(@emp.Id)">
-                    @emp.Id
-                </a>
-            </td>
-            <td>@emp.FirstName @emp.LastName</td>
-            <td>@emp.City</td>
-        </tr>
-    }
-</table> *@
+</table>
 
 <!-- Modal -->
 <div class="modal fade" id="employeeModal">
@@ -97,13 +84,37 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="salaryModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
 
+            <div class="modal-header">
+                <h5 class="modal-title">Employee Salary</h5>
+                <button type="button" class="btn-close"
+                        data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body" id="salaryModalBody">
+                <!-- Partial view loads here -->
+            </div>
+
+        </div>
+    </div>
+</div>
 @section Scripts {
     <script>
         function editEmployee(id) {
             $("#modalBody").load("/Employee/Edit?id=" + id, function () {
                 $("#employeeModal").modal("show");
             });
+        }
+        function showSalary(employeeId) {
+            $("#salaryModalBody").load(
+                "/EmployeeSalary/CurrentYearSalary?employeeId=" + employeeId,
+                function () {
+                    $("#salaryModal").modal("show");
+                }
+            );
         }
     </script>
 }

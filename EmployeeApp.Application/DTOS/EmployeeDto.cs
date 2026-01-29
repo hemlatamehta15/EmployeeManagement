@@ -13,5 +13,6 @@ namespace EmployeeApp.Application.DTOS
         public string LastName { get; set; }
         public string City { get; set; }
         public string Zip { get; set; }
+        public DateTime CreatedDate { get; set; }
     }
 }

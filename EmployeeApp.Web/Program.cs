@@ -4,6 +4,7 @@ using EmployeeApp.Core.Interfaces;
 using EmployeeApp.Infrastructure.Data;
 using EmployeeApp.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +14,6 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<ISalaryRepository, SalaryRepository>();
-builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(
@@ -21,8 +21,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         b => b.MigrationsAssembly("EmployeeApp.Infrastructure")
     ));
 builder.Services.AddScoped<EmployeeService>();
-
-builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddScoped<EmployeeSalaryService>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
